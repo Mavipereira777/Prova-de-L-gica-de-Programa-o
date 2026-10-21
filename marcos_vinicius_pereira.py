@@ -44,7 +44,7 @@ while True:
 				for caracteres in elementos:
 					somatorio += caracteres
 					qtd_elem += 1
-			print(f"A soma de todos os elementos é igual a {somatorio}\nA média é igual a {somatorio/len(matriz)}")
+			print(f"A soma de todos os elementos é igual a {somatorio}\nA média é igual a {somatorio/qtd_elem}")
 		case _:
 			print("Digite algo valido")
 	limpar()
