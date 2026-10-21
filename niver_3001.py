@@ -47,16 +47,12 @@ def conta_geral(frase = " "):
 	qtd_num = 0
 	qtd_esp = 0
 	for i in frase.lower():
-		for v in vogais:
-			if i == v:
-				qtd_vogais += 1
-		for c in consoantes:
-			if i == c:
+		if i in vogais:
+			qtd_vogais += 1
+		if i in consoantes:
 				qtd_cons += 1
-		for n in numerais:
-			if i == n:
+		if i in numerais:
 				qtd_num += 1
-		for esp in cara_esp:
-			if i == esp:
-				qtd_esp += 1
+		if i in cara_esp:
+			qtd_esp += 1
 	return(qtd_vogais,qtd_cons,qtd_num,qtd_esp)
